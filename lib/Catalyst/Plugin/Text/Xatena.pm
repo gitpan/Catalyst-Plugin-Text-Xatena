@@ -7,14 +7,14 @@ use warnings;
 use base 'Class::Data::Inheritable';
 use Text::Markdown;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 $VERSION = eval $VERSION;
 
 
-
+use Text::Xatena;
 
 __PACKAGE__->mk_classdata('text_xatena');
-__PACKAGE__->text_xatena( Text::Markdown->new );
+__PACKAGE__->text_xatena( Text::Xatena->new );
 
 1;
 __END__

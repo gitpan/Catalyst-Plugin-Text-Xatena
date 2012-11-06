@@ -10,7 +10,7 @@ WriteMakefile(
     ($] >= 5.008 ?     ## Add these new keywords supported since 5.005
       (ABSTRACT_FROM  => 'lib/Catalyst/Plugin/Text/Xatena.pm', # retrieve abstract from module
        AUTHOR         => 'Kazuki MATSUDA <kazukima@cpan.org>') : ()),
-    VERSION           => '0.01',
+    VERSION           => '0.02',
     PREREQ_PM         => {
 	'Text::Xatena'              => 0,
 	'Class::Data::Inheritable'  => 0,
